@@ -5,10 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/todo.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+    />
     <title>Document</title>
   </head>
   <body>
-    <h2 class="greeting"></h2>
+    <section class="container grid">
+      <div class="todo-list-container">
+        <div class="todo-list-box">
+          <ul class="todo-list"></ul>
+        </div>
+        <div class="todo-list-form">
+          <form class="todo-form">
+            <input type="text" required />
+          </form>
+        </div>
+      </div>
+      <div class="todo-info-container">
+        <div class="info-box">
+          <h2 class="username"></h2>
+        </div>
+      </div>
+    </section>
+
     <script src="./js/todo.js"></script>
   </body>
 </html>

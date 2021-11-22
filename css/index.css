@@ -67,13 +67,17 @@ Paragraph default: 1.6
   }
 }
 
+section {
+  background-color: #fafafa;
+}
+
 .first-screen {
   max-width: 130rem;
   height: 100vh;
   margin: 0 auto;
   padding: 6.4rem;
-
-  background-color: #fafafa;
+  background-color: #fff;
+  /* background-color: #fafafa; */
 }
 
 .heading-primary {
