@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="first-screen">
+      <div class="heading-primary">
+        <ion-icon class="todo-icon" name="list-outline"></ion-icon>
+        <span class="todo-text">to-do list</span>
+      </div>
+      <div class="greeting-text-box">
+        <span>Hello, There!😁</span>
+        <span>What's your name?</span>
+        <h2 class="clock"></h2>
+      </div>
+
+      <div class="login-box">
+        <form class="login-form hidden">
+          <input class="login-input" maxlengh="15" type="text" />
+          <button class="next-button">
+            <ion-icon class="next-button-icon" name="arrow-forward-circle-outline"></ion-icon>
+          </button>
+          <!-- <input type="submit" value="Log in" /> -->
+        </form>
+      </div>
+    </section>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./js/clock.js"></script>
+    <script src="./js/greeting.js"></script>
+  </body>
+</html>

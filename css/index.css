@@ -1,0 +1,178 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+
+- Line heights
+Default: 1
+Small: 1.05
+Medium: 1.2
+Paragraph default: 1.6
+
+- Letter spacing
+-0.5px
+0.75px
+
+--- 05 SHADOWS
+
+0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+
+
+--- 07 WHITESPACE
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.first-screen {
+  max-width: 130rem;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 6.4rem;
+
+  background-color: #fafafa;
+}
+
+.heading-primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1dd1a1;
+
+  padding: 3.2rem 0;
+  animation: moveInTop 1s ease-out;
+}
+
+.todo-icon {
+  font-size: 9.8rem;
+}
+
+.todo-text {
+  display: inline-block;
+  font-size: 7.4rem;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  margin-left: 2.4rem;
+}
+
+.greeting-text-box {
+  max-width: 120rem;
+  padding: 3.2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.greeting-text-box span {
+  margin-bottom: 2rem;
+  padding: 3rem;
+  font-size: 4.4rem;
+  background-color: #1dd1a1;
+  border-radius: 3rem;
+
+  animation: moveInLeft 1s ease-out;
+  /* display: inline-block; */
+}
+
+.greeting-text-box span:last-child {
+  margin-bottom: 0;
+}
+
+.clock {
+  display: inline-block;
+  margin-left: 2rem;
+  animation: moveInLeft 1s ease-out;
+  color: #888;
+}
+
+.login-box {
+  max-width: 120rem;
+  padding: 3.2rem 0;
+  display: flex;
+  justify-content: flex-end;
+
+  animation: moveInBottom 1s ease-out;
+}
+
+.login-form {
+  padding: 3rem;
+  background-color: #eceff1;
+  border-radius: 10rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form input:first-child {
+  font-size: 2.4rem;
+  width: 20rem;
+  height: 7rem;
+  padding: 2rem;
+  border: none;
+  outline: none;
+
+  background-color: #eceff1;
+}
+
+.next-button {
+  height: 7rem;
+
+  border: unset;
+  background: unset;
+  outline: none;
+  cursor: pointer;
+}
+
+.next-button-icon {
+  font-size: 3rem;
+  width: 7rem;
+  height: 7rem;
+  background-color: #1dd1a1;
+  color: #fff;
+  border-radius: 100%;
+}
